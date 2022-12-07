@@ -14,7 +14,7 @@ return [
     */
 
     'paths' => [
-        app_path('templates'),
+        base_path('templates'),
     ],
 
     /*

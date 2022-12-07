@@ -52,4 +52,6 @@ $app->singleton(
 |
 */
 
+$app->useLangPath(base_path('lang'));
+
 return $app;

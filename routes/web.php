@@ -21,6 +21,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [AppController::class, 'home'])->name('app.home');
+Route::get('/posts', [PostsController::class, 'index'])->name('posts.index');
+Route::get('/posts/travels/create', [PostsController::class, 'travels'])->name('posts.travel.create');
+Route::get('/posts/coli/create', [PostsController::class, 'coli'])->name('posts.coli.create');
+
 Route::view('/', 'welcome')->name('home');
 
 Route::middleware('guest')->group(function () {
