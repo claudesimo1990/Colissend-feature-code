@@ -10,9 +10,6 @@ module.exports = {
                 success: colors.green,
                 warning: colors.yellow,
             },
-            // fontFamily: {
-            //     sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-            // },
             animation: {
                 'fade-in': 'fade-in 0.5s linear forwards',
                 marquee: 'marquee var(--marquee-duration) linear infinite',

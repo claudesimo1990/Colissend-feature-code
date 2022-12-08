@@ -1,4 +1,4 @@
-<nav class="bg-white shadow"  x-data="{ responsive: false }">
+<nav class="bg-white dark:bg-gray-900 shadow"  x-data="{ responsive: false }">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 justify-between">
             <div class="flex">

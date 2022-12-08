@@ -12,7 +12,7 @@ class AppController extends Controller
 {
     public function home(): Factory|View|Application
     {
-        return view('site.app');
+        return view('welcome');
 
     }
 }

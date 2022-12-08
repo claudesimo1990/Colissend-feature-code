@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta charset="utf-8">
@@ -27,13 +27,19 @@
         @livewireScripts
         @stack('scripts')
     </head>
-    <body class="bg-gray-100">
-    @include('../includes.nav.desktop')
-    @yield('header')
-    <div class="mx-auto max-w-7xl mt-16 px-4 sm:px-6 lg:px-8" id="app">
-        @yield('content')
-    </div>
-    <script src="{{ mix('js/appController.js') }}"></script>
-    <script src="{{ mix('js/alpineController.js') }}" defer></script>
+    <body class="dark:bg-blue-100">
+
+        @include('layouts/includes/nav/desktop')
+
+        @yield('header')
+
+        <main>
+            @yield('content')
+        </main>
+
+        @include('../layouts/includes.footer')
+
+        <script src="{{ mix('js/appController.js') }}"></script>
+        <script src="{{ mix('js/alpineController.js') }}" defer></script>
     </body>
 </html>
